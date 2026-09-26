@@ -1,0 +1,12 @@
+
+model:
+  channels: 5
+  segment_length: 24
+  embed_dim: 128
+  layers: 3
+  prediction_length: 24
+
+training:
+  batch_size: 32
+  lr: 0.001
+  optimizer: Adam
