@@ -1,4 +1,3 @@
-"""Batch inference using checkpoint preprocessing; accepts unlabeled new windows."""
 from __future__ import annotations
 import csv
 from pathlib import Path
