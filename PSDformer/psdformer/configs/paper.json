@@ -1,5 +1,4 @@
 {
-  "description": "Reference defaults; not an exact experimental reproduction.",
   "model": {
     "input_dim": 5,
     "input_len": 24,
