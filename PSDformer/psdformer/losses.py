@@ -1,5 +1,3 @@
-"""Masked forecast MSE and optional, explicitly labelled classification CE."""
-
 from __future__ import annotations
 
 from collections.abc import Mapping
