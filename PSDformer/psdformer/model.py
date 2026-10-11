@@ -1,13 +1,3 @@
-"""Configurable, independent PyTorch reference implementation of PSDformer.
-
-This is not official code and does not establish an exact reproduction. The
-manuscript specifies the attention/merging scaffold, but leaves architectural
-hyperparameters and DGC shape handling unspecified. The defaults below are
-illustrative engineering choices. In particular, the classification head is an
-optional extension: its label count, targets and loss are not given by the
-manuscript.
-"""
-
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
