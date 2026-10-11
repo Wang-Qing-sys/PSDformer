@@ -1,4 +1,3 @@
-"""Runnable, assumption-documented PSDformer research reference implementation."""
 from .model import PSDformer, PSDformerConfig
 
 __version__ = "0.1.0"
