@@ -1,4 +1,3 @@
-"""Validated NPZ windows, participant-disjoint splits, and explicit CSV conversion."""
 from __future__ import annotations
 import csv
 import hashlib
