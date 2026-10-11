@@ -1,4 +1,3 @@
-"""Run python -m psdformer --help for the full reference pipeline."""
 from __future__ import annotations
 import argparse
 import json
