@@ -1,4 +1,3 @@
-"""Adam training with train-only scalers and validation-only checkpoint selection."""
 from __future__ import annotations
 import json
 import math
