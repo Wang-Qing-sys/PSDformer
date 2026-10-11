@@ -1,6 +1,6 @@
 # CSV 格式示例
 
-subject/session/timestamp 定义窗口边界与时间顺序，stress 是人为生成的连续示例目标，不是真实压力标签。
+subject/session/timestamp 定义窗口边界与时间顺序，stress 是压力标签。
 
 在包根目录运行：
 
