@@ -1,0 +1,7 @@
+{
+  "kind": "synthetic_smoke_test_only",
+  "seed": 42,
+  "subjects": 6,
+  "windows_per_subject": 5,
+  "warning": "Simulated trajectories and regime labels; not real stress annotations, paper data or scientific replication."
+}

@@ -1,0 +1,27 @@
+{
+  "torch_version": "2.14.1+cpu",
+  "numpy_version": "2.3.5",
+  "default_model_parameter_count": 897234,
+  "demo_parameter_count": 29950,
+  "optimizer_steps": 6,
+  "best_epoch": 2,
+  "changed_floating_state_tensors": 163,
+  "sum_absolute_parameter_change_from_initialization": 71.95322837866843,
+  "checkpoint_reload_csv_identical": true,
+  "normalizers_verified_train_only": true,
+  "split": {
+    "train": [
+      "synthetic_subject_05",
+      "synthetic_subject_04",
+      "synthetic_subject_01",
+      "synthetic_subject_00"
+    ],
+    "val": [
+      "synthetic_subject_03"
+    ],
+    "test": [
+      "synthetic_subject_02"
+    ]
+  },
+  "n_windows": 30
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "epoch": 1,
+    "global_step": 3,
+    "train": {
+      "forecast": 1.0038544620786394,
+      "classification": 1.089482045173645,
+      "total": 2.0933365072522845,
+      "n_forecast": 56,
+      "n_classification": 20,
+      "optimizer_steps": 3,
+      "max_unclipped_gradient_norm": 2.359004259109497
+    },
+    "validation": {
+      "forecast": 0.6728362355913434,
+      "classification": 1.069777011871338,
+      "total": 1.7426132474626814,
+      "n_forecast": 14,
+      "n_classification": 5,
+      "optimizer_steps": 0,
+      "max_unclipped_gradient_norm": 0.0
+    },
+    "selection_metric": "val_total_loss",
+    "selection_value": 1.7426132474626814,
+    "selected": true
+  },
+  {
+    "epoch": 2,
+    "global_step": 6,
+    "train": {
+      "forecast": 0.9558989320482526,
+      "classification": 1.07571120262146,
+      "total": 2.0316101346697124,
+      "n_forecast": 56,
+      "n_classification": 20,
+      "optimizer_steps": 3,
+      "max_unclipped_gradient_norm": 3.347524881362915
+    },
+    "validation": {
+      "forecast": 0.6696201051984515,
+      "classification": 1.0624062538146972,
+      "total": 1.7320263590131488,
+      "n_forecast": 14,
+      "n_classification": 5,
+      "optimizer_steps": 0,
+      "max_unclipped_gradient_norm": 0.0
+    },
+    "selection_metric": "val_total_loss",
+    "selection_value": 1.7320263590131488,
+    "selected": true
+  }
+]

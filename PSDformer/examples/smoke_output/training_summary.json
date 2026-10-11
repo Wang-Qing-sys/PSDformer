@@ -1,0 +1,24 @@
+{
+  "checkpoint": "runs/verified_demo/best.pt",
+  "last_checkpoint": "runs/verified_demo/last.pt",
+  "best_epoch": 2,
+  "selection_metric": "val_total_loss",
+  "best_validation_value": 1.7320263590131488,
+  "global_step": 6,
+  "split": {
+    "train": [
+      "synthetic_subject_05",
+      "synthetic_subject_04",
+      "synthetic_subject_01",
+      "synthetic_subject_00"
+    ],
+    "val": [
+      "synthetic_subject_03"
+    ],
+    "test": [
+      "synthetic_subject_02"
+    ]
+  },
+  "task": "joint",
+  "synthetic_demo": true
+}

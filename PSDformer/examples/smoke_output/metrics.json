@@ -1,0 +1,95 @@
+{
+  "partition": "test",
+  "checkpoint": "runs/verified_demo/best.pt",
+  "task": "joint",
+  "synthetic_demo": true,
+  "subject_ids": [
+    "synthetic_subject_02"
+  ],
+  "metrics": {
+    "n_windows": 5,
+    "n_subjects": 1,
+    "forecasting": {
+      "n_valid": 14,
+      "mae": 0.5137519485184124,
+      "mse": 0.4012751315057078,
+      "rmse": 0.6334628098836647,
+      "rse": 0.6842180354901444,
+      "r2": -0.11319810840105449
+    },
+    "forecasting_per_output": [
+      {
+        "n_valid": 14,
+        "mae": 0.5137519485184124,
+        "mse": 0.4012751315057078,
+        "rmse": 0.6334628098836647,
+        "rse": 0.6842180354901444,
+        "r2": -0.11319810840105449
+      }
+    ],
+    "forecasting_per_horizon": [
+      {
+        "n_valid": 5,
+        "mae": 0.5256282031536103,
+        "mse": 0.4231294615726734,
+        "rmse": 0.6504840209971905,
+        "rse": 0.8397712600987182,
+        "r2": 0.014255166678726061
+      },
+      {
+        "n_valid": 5,
+        "mae": 0.4629530906677246,
+        "mse": 0.36287193051674543,
+        "rmse": 0.602388521235876,
+        "rse": 0.7776802368976868,
+        "r2": -0.053986792521993676
+      },
+      {
+        "n_valid": 4,
+        "mae": 0.562405202537775,
+        "mse": 0.421961220158204,
+        "rmse": 0.6495854217562183,
+        "rse": 0.9186525133674909,
+        "r2": -0.4810480883865125
+      }
+    ],
+    "classification": {
+      "n_labelled": 5,
+      "accuracy": 0.4,
+      "macro_precision": 0.13333333333333333,
+      "macro_recall": 0.3333333333333333,
+      "macro_f1": 0.1904761904761905,
+      "nll": 1.0830500178525,
+      "confusion_matrix": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "support": [
+        2,
+        2,
+        1
+      ]
+    }
+  },
+  "units": "original target units after inverse training-only normalization",
+  "metric_conventions": {
+    "rse": "sqrt(SSE/(n_valid-2)); undefined when n_valid<=2",
+    "r2": "1-SSE/SST; undefined for constant target",
+    "undefined": "JSON null",
+    "aggregate": "micro over observed target cells",
+    "classification": "macro over all configured classes; zero division=0"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "description": "Small synthetic integration test, not manuscript results.",
+  "model": {
+    "input_dim": 5,
+    "input_len": 24,
+    "pred_len": 3,
+    "output_dim": 1,
+    "num_classes": 3,
+    "d_model": 16,
+    "n_heads": 4,
+    "segment_len": 4,
+    "router_count": 4,
+    "tde_layers": 1,
+    "encoder_levels": 2,
+    "dropout": 0.0,
+    "ff_multiplier": 2,
+    "dgc_growth_rate": 4,
+    "dgc_layers_per_block": 2,
+    "dgc_pool_size": 2
+  },
+  "training": {
+    "task": "joint",
+    "epochs": 2,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "gradient_clip": 1.0,
+    "forecast_weight": 1.0,
+    "classification_weight": 1.0,
+    "selection_metric": "val_total_loss",
+    "seed": 42,
+    "val_fraction": 0.15,
+    "test_fraction": 0.15,
+    "cpu_threads": 2
+  },
+  "provenance": {
+    "paper_specified": [
+      "Adam optimizer",
+      "learning_rate=0.001",
+      "batch_size=32",
+      "input_len=24",
+      "reported K settings: 3,6,12,24"
+    ],
+    "reference_assumptions": [
+      "K interpreted as forecast horizon pred_len",
+      "all architectural widths/depths and target dimensionality are configurable reference choices",
+      "epochs, split fractions, normalization, gradient clipping, seeds and checkpoint selection are not specified by the manuscript",
+      "forecast MSE supported by official code; classification CE is an optional reference choice",
+      "real class count and labels are unknown; classification disabled by default",
+      "Three classes are synthetic trajectory regimes for smoke testing, not claimed stress categories."
+    ]
+  },
+  "demo": {
+    "subjects": 6,
+    "windows_per_subject": 5
+  }
+}
