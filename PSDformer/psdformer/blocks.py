@@ -1,11 +1,3 @@
-"""Building blocks for an independent, equation-guided PSDformer reference.
-
-Internal attention tensors use [batch, variable, segment, embedding]. This
-module follows the manuscript's Algorithm 1 and Eqs. (1)--(19), rather than
-claiming to recover an unpublished implementation. Details not specified in
-the manuscript are identified explicitly below.
-"""
-
 from __future__ import annotations
 
 import math
