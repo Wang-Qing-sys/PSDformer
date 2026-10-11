@@ -1,10 +1,3 @@
-"""NumPy evaluation metrics with explicit missing-label conventions.
-
-Forecast scores pool all observed scalar targets. ``rse`` follows the supplied
-manuscript's residual-standard-error equation, sqrt(SSE / (n - 2)); it is not
-the alternative relative-squared-error metric sometimes given the same name.
-"""
-
 from __future__ import annotations
 
 import numpy as np
