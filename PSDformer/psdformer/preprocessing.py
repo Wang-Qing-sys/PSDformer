@@ -1,4 +1,3 @@
-"""Train-partition-only standardization; the final axis contains variables."""
 from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
