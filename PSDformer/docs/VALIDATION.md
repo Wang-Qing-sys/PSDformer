@@ -1,6 +1,6 @@
 # 实际执行核验
 
-日期：2026-10-11。环境：Linux x86-64、Python 3.12.14、PyTorch 2.14.1+cpu、NumPy 2.3.5。
+环境：Linux x86-64、Python 3.12.14、PyTorch 2.14.1+cpu、NumPy 2.3.5。
 
 ## 已执行
 
